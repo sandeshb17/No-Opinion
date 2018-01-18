@@ -43,22 +43,22 @@ export class Header extends Component {
                             <li className="dropdown messages-menu">
                                 <a href="#" className="dropdown-toggle" data-toggle="dropdown">
                                     <i className="fa fa-envelope-o"></i>
-                                    <span className="label label-success">4</span>
+                                    <span className="label label-success">1</span>
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li className="header">You have 4 messages</li>
+                                    <li className="header">You have 1 messages</li>
                                     <li>
                                         <ul className="menu">
                                             <li>
                                                 <a href="#">
                                                     <div className="pull-left">
-                                                        <img src="img/user2-160x160.jpg" className="img-circle" alt="User Image" />
+                                                        <img src="img/avatar04.png" className="img-circle" alt="User Image" />
                                                     </div>
                                                     <h4>
-                                                        Support Team
+                                                        Team
                                                         <small><i className="fa fa-clock-o"></i> 5 mins</small>
                                                     </h4>
-                                                    <p>Why not buy a new awesome theme?</p>
+                                                    <p>Hey, k cha ho kabar?</p>
                                                 </a>
                                             </li>
                                         </ul>
