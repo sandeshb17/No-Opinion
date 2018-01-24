@@ -13,7 +13,7 @@ export class SideBar extends Component {
                         </div>
                         <div className="pull-left info">
                             <p>Sandesh Bhetwal</p>
-                            <a href="#"><i className="fa fa-circle text-success"></i> Online</a>
+                            <a href="#"><i className="fa fa-circle text-success"></i> Writer</a>
                         </div>
                     </div>
                     <br/>
