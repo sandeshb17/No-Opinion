@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import {
     IndexRoute,
-    hashHistory
+    browserHistory
 } from "react-router";
 import { render } from "react-dom";
 
@@ -23,15 +23,14 @@ import {About} from "./components/About";
 class App extends React.Component {
     render(){
         return (
-            <Router history={hashHistory}>
+            <Router history={browserHistory}>
             <div>
-               <Route exact path='/' component={Home} >        
+               <Route exact path='/' component={Home} />
 
-               </Route>       
-               
+
                <Route exact path='/dashboard' component={Dash} />                        
-                <Route exact path='/login' component={Loginform} />   
-                <Route exact path='/aboutus' component={About} /> 
+                <Route exact path='/login' component={Loginform} />
+                <Route exact path='/aboutus' component={About} />
             </div>
                 
             </Router>

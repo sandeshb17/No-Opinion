@@ -10,7 +10,7 @@ import {PageHeader} from "./PageHeader";
 import {PageFooter} from "./PageFooter";
 import { Loginform } from "./Loginform";
 
-export class About extends Component {
+export class About extends React.Component {
     render(){
         return(
             

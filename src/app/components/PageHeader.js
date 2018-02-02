@@ -1,10 +1,14 @@
 import React, { Component } from "react";
+<<<<<<< HEAD
 import {
     BrowserRouter as Router,
     Route,
     Link
   } from 'react-router-dom';
 
+=======
+import {Link} from "react-router-dom";
+>>>>>>> 0e20ad6f55376078626eec4cf07d7aeec98fbb31
 
 export class PageHeader extends Component {
     render(){
@@ -23,7 +27,7 @@ export class PageHeader extends Component {
                                 <li ><a href="#">The App</a></li>
                                 <li ><a href="#">Fact Guides</a></li>
                                 <li ><a href="#">Fact Leaders</a></li>
-                                <li ><a href="/aboutus">About us</a></li>
+                                <li ><Link to="/aboutus">About us</Link></li>
                             </ul>
                     </div>
             </div>
