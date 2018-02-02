@@ -25,13 +25,12 @@ class App extends React.Component {
         return (
             <Router history={hashHistory}>
             <div>
-               <Route exact path='/' component={Home} >        
+               <Route exact path='/' component={Home} />
 
-               </Route>       
-               
+
                <Route exact path='/dashboard' component={Dash} />                        
-                <Route exact path='/login' component={Loginform} />   
-                <Route exact path='/aboutus' component={About} /> 
+                <Route exact path='/login' component={Loginform} />
+                <Route exact path='/aboutus' component={About} />
             </div>
                 
             </Router>

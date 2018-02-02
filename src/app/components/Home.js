@@ -11,9 +11,6 @@ import {PageHeader} from "./PageHeader";
 import {PageFooter} from "./PageFooter";
 
 
-
-
-
 export class Home extends React.Component{
    
     render(){
