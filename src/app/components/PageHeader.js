@@ -1,4 +1,10 @@
 import React, { Component } from "react";
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+  } from 'react-router-dom';
+
 
 export class PageHeader extends Component {
     render(){
@@ -8,7 +14,7 @@ export class PageHeader extends Component {
            
             <div className="row">
                <div className="col-md-12 no-head  center-content pd-10">
-                        <a href="/"><img src="img/logo.png"  alt="Subscribe icon" width="25%" /></a>
+                        <Link to="/"><img src="img/logo.png"  alt="Subscribe icon" width="25%" /></Link>
                     </div>
                 
                     <div className="no-nav col-md-12 center-content">

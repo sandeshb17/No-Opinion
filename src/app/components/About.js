@@ -29,7 +29,7 @@ export class About extends Component {
                             <br/>
                             <p className="lead">Each purchase of Stack includes six months of free support, including access to our dedicated support forum. In addition to support you'll recieve lifetime updates, including new content and bug-fixes.
                             </p>
-                            <a data-toggle="modal" data-target="#myModal">Login</a>
+                            <a className="btn btn-primary btn-block btn-flat" data-toggle="modal" data-target="#myModal">Login</a>
 
                                 <div className="modal p-10em fade" id="myModal" role="dialog">
                                     <div className="modal-dialog">

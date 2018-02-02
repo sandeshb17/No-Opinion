@@ -26,6 +26,7 @@
     min-height: 100vh;
     position: fixed;
     width: 100%;
+    
     background: lightblue url("../img/photo4.jpg") no-repeat fixed center !important;
     .no-login-box{
         width: 30%;
@@ -33,6 +34,7 @@
         margin: 8em auto;
         background: white;
         border-radius: 22px;
+        
         div{
             margin-bottom: 15px;
             font-size: 1.2em;
@@ -66,9 +68,9 @@
 
 
 /*landing page*/
-$fontcolorhover : #0a4657;
-$fontcolor : #107895;
-$headfontcolor : #383737;
+$fontcolorhover : #042731;
+$fontcolor :#ed8239;
+$headfontcolor :  #0a4657;
 
 .lead{
     font-weight: 400;
@@ -359,6 +361,14 @@ $headfontcolor : #383737;
     padding-bottom: 5.5em;
     .about-text{
         margin-top: 2em;
+        a{
+            color: white ;
+            font-size: 1.1em;
+        }
+        a:hover{
+            cursor: pointer;
+            color: white;
+        }
     }
     h3{
         margin-bottom: 1.04em;
@@ -382,6 +392,9 @@ $headfontcolor : #383737;
             margin: unset;
             background: unset;
             border-radius: unset;
+            a{
+                color: #3c8dbc;
+            }
         }
     }
     .modal-header {
