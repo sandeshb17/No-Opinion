@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from "react-router-dom";
 
 export class PageFooter extends Component {
     render(){
@@ -20,7 +21,7 @@ export class PageFooter extends Component {
                                     <ul>
                                         <li><a href="#">Company Information</a></li>
                                         <li><a href="#">Contact us</a></li>
-                                        <li><a href="/login">Login</a></li>
+                                        <li><Link to="/login">Login</Link></li>
                                     </ul>
                                 </div>
                                 <div className="col-sm-3 myCols">

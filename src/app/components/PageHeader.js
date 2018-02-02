@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from "react-router-dom";
 
 export class PageHeader extends Component {
     render(){
@@ -17,7 +18,7 @@ export class PageHeader extends Component {
                                 <li ><a href="#">The App</a></li>
                                 <li ><a href="#">Fact Guides</a></li>
                                 <li ><a href="#">Fact Leaders</a></li>
-                                <li ><a href="/aboutus">About us</a></li>
+                                <li ><Link to="/aboutus">About us</Link></li>
                             </ul>
                     </div>
             </div>
