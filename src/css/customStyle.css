@@ -115,12 +115,12 @@
     padding: 8px 16px;
     text-decoration: none; }
   .landing-page .no-nav li a:hover {
-    color: #042731; }
+    color: #6e6d6d; }
   .landing-page .no-banner {
     text-align: center;
     line-height: 1.5em; }
     .landing-page .no-banner .banner-head {
-      color: #0a4657; }
+      color: #6e6d6d; }
       .landing-page .no-banner .banner-head h1 {
         color: #ed8239;
         width: 100%;
@@ -137,7 +137,7 @@
     .landing-page .no-subscribe .box span {
       font-weight: bold;
       font-size: 1.8em;
-      color: #0a4657; }
+      color: #6e6d6d; }
   .landing-page .no-subscribe .effect {
     position: relative; }
   .landing-page .no-subscribe .effect:before, .landing-page .no-subscribe .effect:after {
@@ -188,7 +188,7 @@
     border-top-right-radius: 6px;
     box-sizing: border-box; }
   .landing-page .no-subscribe input[type=submit]:hover {
-    background-color: #042731;
+    background-color: #6e6d6d;
     color: white; }
   .landing-page .no-body {
     text-align: center;
@@ -211,7 +211,7 @@
     line-height: 1.7; }
   .landing-page .no-footer #myFooter h5 {
     font-size: 18px;
-    color: #0a4657;
+    color: #6e6d6d;
     font-weight: bold;
     margin-top: 30px; }
   .landing-page .no-footer #myFooter a {
@@ -219,7 +219,7 @@
     text-decoration: none; }
   .landing-page .no-footer #myFooter a:hover, .landing-page .no-footer #myFooter a:focus {
     text-decoration: none;
-    color: #0a4657; }
+    color: #6e6d6d; }
   .landing-page .no-footer #myFooter .myCols {
     text-align: center; }
   .landing-page .no-footer #myFooter .social-networks {
@@ -230,7 +230,7 @@
     font-size: 32px;
     margin-right: 5px;
     margin-left: 5px;
-    color: #0a4657;
+    color: #6e6d6d;
     padding: 10px; }
   .landing-page .no-footer #myFooter .social-networks a i {
     display: inline-block;
