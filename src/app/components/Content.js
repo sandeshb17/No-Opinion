@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 
-export class Content extends Component {
+export class Content extends React.Component {
     render(){
         return (
             <div className="content-wrapper minHeight990">
