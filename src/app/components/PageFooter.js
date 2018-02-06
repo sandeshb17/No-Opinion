@@ -6,7 +6,6 @@ import {
     Link
   } from 'react-router-dom';
 
-
 export class PageFooter extends Component {
     render(){
         return(
