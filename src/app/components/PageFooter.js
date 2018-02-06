@@ -1,14 +1,10 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
+
 import {
     BrowserRouter as Router,
     Route,
     Link
   } from 'react-router-dom';
-
-=======
-import {Link} from "react-router-dom";
->>>>>>> 0e20ad6f55376078626eec4cf07d7aeec98fbb31
 
 export class PageFooter extends Component {
     render(){
