@@ -22,20 +22,19 @@ export class ListRole extends React.Component {
             return(
                 <div className="card"  key={key}>
                     <div className="card-block">
-                        <h5 className="card-title">{role.title}</h5>
-                        <p className="card-text">{role.description}</p>
+                        <h5 className="card-title"><b>Title: </b>{role.title}</h5>
+                        <p className="card-text"><b>Description: </b>{role.description}</p>
                         <button className="btn btn-primary" onClick={this.onHandleEdit.bind(this, role, key)}>Edit</button>
+                        {/*&emsp;*/}
+                        {/*<Confirm*/}
+                            {/*onConfirm={this.onHandleDelete.bind(this,key)}*/}
+                            {/*body="Are you sure you want to delete this?"*/}
+                            {/*confirmText="Confirm Delete"*/}
+                            {/*title="Delete Role">*/}
+                            {/*<button className="btn btn-danger">Delete</button>*/}
+                        {/*</Confirm>*/}
+                   {/*<button className="btn btn-danger" onClick={this.onHandleDelete.bind(this,key)}>Delete</button>*/}
 
-                        <Confirm
-                            onConfirm={this.onHandleDelete.bind(this,key)}
-                            body="Are you sure you want to delete this?"
-                            confirmText="Confirm Delete"
-                            title="Delete Role">
-                            <button className="btn btn-danger">Delete</button>
-                        </Confirm>
-{/*
-                        <button className="btn btn-danger" onClick={this.onHandleDelete.bind(this,key)}>Delete</button>
-*/}
                     </div>
                 </div>
             )
@@ -46,7 +45,7 @@ export class ListRole extends React.Component {
     render(){
         return (
             <div>
-                <h1>List Role</h1>
+                <h1>List of User Roles</h1>
                 {this.renderRole()}
             </div>
         )

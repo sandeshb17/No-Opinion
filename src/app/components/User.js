@@ -30,6 +30,7 @@ export class User extends Component {
     }
     render(){
         return (
+
             <div>
                 <div className="row">
 

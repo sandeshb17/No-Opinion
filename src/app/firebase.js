@@ -1,11 +1,11 @@
 import * as firebase from 'firebase';
 const config = {
-    apiKey: "AIzaSyABMGdDpzFjiDMJ_K6o8zpDAFkQmLYAEcY",
-    authDomain: "opnium-fbde5.firebaseapp.com",
-    databaseURL: "https://opnium-fbde5.firebaseio.com",
-    projectId: "opnium-fbde5",
-    storageBucket: "opnium-fbde5.appspot.com",
-    messagingSenderId: "947637646820"
+    apiKey: "AIzaSyAFEA78RgiDLtHyjisOWQ9glcbVepFJufM",
+    authDomain: "noopinion-5cbbe.firebaseapp.com",
+    databaseURL: "https://noopinion-5cbbe.firebaseio.com",
+    projectId: "noopinion-5cbbe",
+    storageBucket: "",
+    messagingSenderId: "138266627420"
 };
 firebase.initializeApp(config);
 
@@ -16,3 +16,4 @@ export const firebaseDatabase = firebase.database();
 export const appUser = firebase.database().ref("/user");
 export const feedCron = firebase.database().ref("/cron");
 export const feedList = firebase.database().ref("/rssFeedList");
+

@@ -22,11 +22,10 @@ export class ListRssFeed extends Component {
             return(
                 <div className="card"  key={keys}>
                     <div className="card-block">
-                        <h5 className="card-title">{rss.url}</h5>
-                        <p className="card-text">{rss.description}</p>
-                        <p className="card-text">{rss.url}</p>
+                        <h5 className="card-title"><b>Feed site title: </b>{rss.title}</h5>
+                        <p className="card-text"><b>Feed site URL: </b>{rss.url}</p>
                         <button className="btn btn-primary" onClick={this.onHandleEdit.bind(this, rss, keys)}>Edit</button>
-
+                        &emsp;
                         <Confirm
                             onConfirm={this.onHandleDelete.bind(this,keys)}
                             body="Are you sure you want to delete this?"
@@ -47,7 +46,7 @@ export class ListRssFeed extends Component {
     render(){
         return (
             <div>
-                <h1>List Rss Feed</h1>
+                <h1>List of RSS Feed Sites</h1>
                 {this.renderRssFeed()}
             </div>
         )

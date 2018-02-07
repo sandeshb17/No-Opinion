@@ -32,12 +32,9 @@ export class SideBar extends Component {
                             <ul className="sidebar-menu" data-widget="tree">
                                 <li className="header">MAIN NAVIGATION</li>
                                 <li className="treeview">
-                                    <a href="#">
+                                    <a href="">
                                         <i className="fa fa-files-o"></i>
                                         <span>User Management</span>
-                                        <span className="pull-right-container">
-                                            <span className="label label-primary pull-right">4</span>
-                                            </span>
                                     </a>
                                     <ul className="treeview-menu">
                                         <li><Link to="/Role"><i className="fa fa-circle-o"></i>Role</Link></li>
@@ -62,7 +59,7 @@ export class SideBar extends Component {
                         </section>
                     </aside>
 
-                    <div className="content-wrapper minHeight990">
+                    <div className="content-wrapper">
                         <Route exact path="/dashboard" component={Dash}/>
                         <Route exact path='/Role' component={Role} />
                         <Route exact path='/User' component={User} />
