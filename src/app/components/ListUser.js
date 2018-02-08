@@ -36,20 +36,22 @@ export class ListUser extends React.Component {
     }
     render(){
         return (
-            <div className="col col-md-7">
-                <h1>List of User Details</h1>
-                <table className="table">
-                    <thead>
-                        <tr>
-                            <th>User Name</th>
-                            <th>User Role</th>
-                            <th>User Email</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {this.renderUser()}
-                    </tbody>
-                </table>
+            <div className="row">
+                <div className="col-sm-12">
+                    <h1>List of User Details</h1>
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <th>User Name</th>
+                                <th>User Role</th>
+                                <th>User Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {this.renderUser()}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         )
     }

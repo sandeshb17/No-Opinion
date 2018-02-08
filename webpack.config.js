@@ -10,6 +10,8 @@ var config= {
         filename: "bundle.js",
         publicPath: "/app/"
     },
+    devtool: 'source-map',
+
     module: {
         loaders:[
             {
@@ -21,6 +23,13 @@ var config= {
                 }
             }
         ]
+    },
+    stats: {
+        errorDetails: true
+    },
+
+    devServer: {
+        historyApiFallback: true,
     }
 };
 

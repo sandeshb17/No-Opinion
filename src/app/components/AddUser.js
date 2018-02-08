@@ -156,13 +156,14 @@ export class AddUser extends React.Component {
         return (
             <div>
                 <div className="row">
-                    {/*<div style={{"display": (this.state.errorMessages)!==""?"":"none","position":"absolute","zIndex":"99999"}}>
+                    <div style={{"display": (this.state.errorMessages)!==""?"":"none","position":"absolute","zIndex":"99999"}}>
                         <Notifications/>
-                    </div>*/}
+                    </div>
                 </div>
-                <div className="col col-md-5">
+                <div className="row">
+                <div className="col-sm-12">
                     <form onSubmit={this.onHandleSubmit}>
-                        <h3>Add New User</h3>
+                        <h1>Add New User</h1>
                         <div className="form-group">
                                 <label htmlFor="FirstName">First Name</label>
                                 <input type="text"
@@ -202,7 +203,7 @@ export class AddUser extends React.Component {
                                    onChange={this.onHandleChange}
                                    value={this.state.PhoneNumber}
                                    required
-                            maxLength="13"/>
+                                   maxLength="13"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="inputState">Role</label>
@@ -251,6 +252,7 @@ export class AddUser extends React.Component {
                     </div>
                         <button type="submit" className="btn btn-primary">{this.state.ActionType}</button>
                     </form>
+                </div>
                 </div>
             </div>
         );

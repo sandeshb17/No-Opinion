@@ -145,9 +145,9 @@ export class AddRssFeed extends React.Component {
                         <Notifications/>
                     </div>
                 </div>
-                <div className="col col-md-5">
+                <div className="col-sm-12">
                     <form onSubmit={this.onHandleSubmit}>
-                        <h3>Add New RSS Feed Site</h3>
+                        <h1>Add New RSS Feed Site</h1>
                         <div className="form-group">
                             {/*<input type="hidden" value={this.state.role_id}/>*/}
                             <div className="form-group">

@@ -128,9 +128,9 @@ export class AddRole extends React.Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-sm-7">
+                    <div className="col-sm-12">
                         <form onSubmit={this.onHandleSubmit}>
-                            <h3>Add New Role</h3>
+                            <h1>Add New Role</h1>
                             <div className="form-group">
                                 <input type="hidden" value={this.state.role_id}/>
                                 <label htmlFor="exampleInputEmail1">Role Title</label>
@@ -154,7 +154,7 @@ export class AddRole extends React.Component {
                                        value={this.state.description}
                                        name="description"
                                        onChange={this.onHandleChange}
-                                       maxLength="100"/>
+                                maxLength="100"/>
                             </div>
                             <button type="submit" className="btn btn-primary">{this.state.actionType}</button>
                         </form>

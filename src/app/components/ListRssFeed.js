@@ -20,10 +20,11 @@ export class ListRssFeed extends Component {
         var rssFeedList = this.props.rssFeedList;
         return _.map(rssFeedList, (rss,keys)=>{
             return(
-                <div className="card"  key={keys}>
-                    <div className="card-block">
-                        <h5 className="card-title"><b>Feed site title: </b>{rss.title}</h5>
-                        <p className="card-text"><b>Feed site URL: </b>{rss.url}</p>
+
+                <tr key={keys}>
+                    <td>{rss.title}</td>
+                    <td>{rss.url}</td>
+                    <td>
                         <button className="btn btn-primary" onClick={this.onHandleEdit.bind(this, rss, keys)}>Edit</button>
                         &emsp;
                         <Confirm
@@ -33,21 +34,31 @@ export class ListRssFeed extends Component {
                             title="Delete Rss Feed">
                             <button className="btn btn-danger">Delete</button>
                         </Confirm>
-{/*
-                        <button className="btn btn-danger" onClick={this.onHandleDelete.bind(this,key)}>Delete</button>
-*/}
-                    </div>
-                </div>
-            )
-            })
+                    </td>
+                </tr>
 
+            )
+            }
+        )
 
     }
     render(){
         return (
             <div>
                 <h1>List of RSS Feed Sites</h1>
-                {this.renderRssFeed()}
+                <table className="table">
+                    <thead>
+                    <tr>
+                        <th>Feed Site Title</th>
+                        <th>Feed site URL</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {this.renderRssFeed()}
+                    </tbody>
+                </table>
+
             </div>
         )
     }

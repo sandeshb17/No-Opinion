@@ -4,6 +4,9 @@ import {Home} from "./Home";
 import {authenticateUser} from "./../firebase";
 import {Redirect, BrowserRouter as Router, Link} from "react-router-dom";
 import Cookies from 'universal-cookie';
+import {Axios} from 'axios';
+
+const axios = new Axios();
 
 const cookies = new Cookies();
 
@@ -18,6 +21,9 @@ export class Loginform extends React.Component {
         };
         this.onHandleLogin=this.onHandleLogin.bind(this);
         this.onHandleChange = this.onHandleChange.bind(this);
+    }
+    componentDidMount(){
+
     }
     onHandleChange(e) {
         this.setState({
