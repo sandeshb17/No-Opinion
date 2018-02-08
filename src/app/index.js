@@ -2,11 +2,12 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  HashRouter 
 } from 'react-router-dom';
 import {
     IndexRoute,
-    browserHistory
+    hashHistory
 } from "react-router";
 import { render } from "react-dom";
 
@@ -23,17 +24,14 @@ import {About} from "./components/About";
 class App extends React.Component {
     render(){
         return (
-            <Router history={browserHistory}>
+            <HashRouter>
             <div>
-               <Route exact path='/' component={Home} />
-
-
-               <Route exact path='/dashboard' component={Dash} />                        
-                <Route exact path='/login' component={Loginform} />
-                <Route exact path='/aboutus' component={About} />
+                <Route exact path='/' component={Home} />        
+                <Route exact path='/dashboard' component={Dash} />                        
+                <Route exact path='/login' component={Loginform} />   
+                <Route exact path='/aboutus' component={About} /> 
             </div>
-                
-            </Router>
+            </HashRouter>
         );
 
     }

@@ -5,7 +5,7 @@ export class Loginform extends React.Component {
     render() {
         return (
             <div className="no-login-body">
-                <div className="no-login-box clearfix">
+                <div className="no-login-box col-xs-10 col-xs-offset-1 col-sm-6 col-lg-4 clearfix">
                     <div className="col-xs-6 col-xs-offset-3" >
                     <a ><img src="img/logo.png"  alt="Subscribe icon" width="100%" /></a>
                     </div>
@@ -22,12 +22,12 @@ export class Loginform extends React.Component {
                                 <span className="glyphicon glyphicon-lock form-control-feedback"></span>
                             </div>
 
-                            <div className="row">
-                                <div className="col-xs-8">
+                            <div className="">
+                                <div className="col-md-8 col-xs-12">
                                 <input type="checkbox" name="remember" value="rememberme"/> Remember Me
                                 </div>
 
-                                <div className="col-xs-4">
+                                <div className="col-md-4 col-xs-12">
                                     <button type="submit" className="btn btn-primary btn-block btn-flat">Sign In</button>
                                 </div>
                             </div>
