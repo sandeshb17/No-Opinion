@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { render } from "react-dom";
+import { HashRouter } from 'react-router-dom'
 import { Switch, BrowserRouter, Route, browserHistory} from 'react-router-dom';
 import {Home} from "./components/Home";
 import {About} from "./components/About";
@@ -25,7 +26,7 @@ export class App extends React.Component {
 
     render() {
         return (
-            <BrowserRouter>
+            <HashRouter>
 
                 <Switch>
                     <Route exact path='/' component={Home} />
@@ -35,6 +36,7 @@ export class App extends React.Component {
                     <Route exact path='/RssFeedCron' component={RssFeedCron}/>
 
                     <Dash>
+                        
                         <Route component={AddRole} path="/Add-Role" pattern="/Add-Role"  />
                         <Route component={AddUser} path="/Add-User" pattern="/Add-User"  />
                         <Route exact path='/Rss' component={RssFeedManagement}/>
@@ -43,7 +45,7 @@ export class App extends React.Component {
 
                 </Switch>
 
-            </BrowserRouter>
+            </HashRouter>
 
         );
     }

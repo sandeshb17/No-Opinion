@@ -25,7 +25,7 @@ export class ListRssFeed extends Component {
                         <h5 className="card-title">{rss.url}</h5>
                         <p className="card-text">{rss.description}</p>
                         <p className="card-text">{rss.url}</p>
-                        <button className="btn btn-primary" onClick={this.onHandleEdit.bind(this, rss, keys)}>Edit</button>
+                        <button className="btn btn-primary" onClick={this.onHandleEdit.bind(this, rss, keys)}>rssEdit</button>
 
                         <Confirm
                             onConfirm={this.onHandleDelete.bind(this,keys)}

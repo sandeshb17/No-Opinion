@@ -1,3 +1,15 @@
+$fontcolorhover : #6e6d6d;
+$fontcolor :#ed8239;
+$headfontcolor :  #6e6d6d;
+
+.dis-block {display:block;}
+
+.collapsing {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
 .cs1{
     position: relative;
 }
@@ -18,23 +30,106 @@
 .mrg-0-auto{
     margin: 0 auto;
 }
+
+/*responsive screen*/
+
+@media screen and (max-width: 767px) {
+    .row{
+        width: 95% !important;
+    }
+    .pg-head{
+        position: relative;
+        #myNavbar{
+            position: absolute;
+            background-color: #efededed;
+            z-index: 99;
+            top:50px;
+        }
+        .no-nav{
+            
+            li{
+                width: 100% !important;
+                border-bottom: 1px solid #ed823970;
+                float:left ;
+                
+            }
+        }
+        .no-head{
+            height: 50px;
+            button{
+                display: block !important;
+                outline: none;
+                div{
+                    width: 1em;
+                    height: 1px;
+                    background-color: $fontcolor;
+                    margin: 4px 0;
+                }
+            
+            }
+        }
+        
+    }
+
+    .no-about {
+        padding-top: 1.5em !important;
+        .about-text{
+            margin-top: unset !important;
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .pg-head{
+        .collapse{
+                display: block !important;
+            }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .landing-page{
+        .no-banner{
+            .banner-head{
+            padding: 15px !important;
+            }
+            a,div{
+                width: 100%;
+                img{
+                    width: 20% !important;
+                }
+            }
+        }
+    }
+
+}
+
+/*responsive screen*/
+
 /*login*/
 .no-login-body{
     a:hover{
         cursor: default;
     }
     min-height: 100vh;
-    position: fixed;
+    position: absolute;
     width: 100%;
     
     background: lightblue url("../img/photo4.jpg") no-repeat fixed center !important;
     .no-login-box{
-        width: 30%;
+        float: unset;
         padding: 35px;
         margin: 8em auto;
         background: white;
         border-radius: 22px;
+        form{
+                div{
+                    padding:unset;
+                }
         
+        }
+
+
         div{
             margin-bottom: 15px;
             font-size: 1.2em;
@@ -66,11 +161,26 @@
 
 /**login*/
 
+/*header*/
+.pg-head{
+    button{
+        display: none;
+        position: absolute;
+        right: 1.2em;
+        background-color:unset;
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        color: black; 
+        padding:unset !important;
+    }
+}
+/*header*/
+
 
 /*landing page*/
-$fontcolorhover : #6e6d6d;
-$fontcolor :#ed8239;
-$headfontcolor :  #6e6d6d;
 
 .lead{
     font-weight: 400;
@@ -98,6 +208,10 @@ $headfontcolor :  #6e6d6d;
 .p-10em{
     padding:10em;
 }
+.p-t-10em{
+padding-top:10em;
+}
+
 .fr{
     float: right;
 }
@@ -122,6 +236,11 @@ $headfontcolor :  #6e6d6d;
 
         .no-head{
         border-bottom: 2px solid $fontcolor;
+        a{
+            img{
+                min-width: 110px;
+            }
+        }
             h1{
                 font-size: 45px;
             }
@@ -137,11 +256,10 @@ $headfontcolor :  #6e6d6d;
         }
 
         li {
+            
             width: 20%;
             float: left;
-        }
-
-        li a {
+            text-transform:uppercase;
             display: block;
             color: $fontcolor;
             text-align: center;
@@ -149,7 +267,7 @@ $headfontcolor :  #6e6d6d;
             text-decoration: none;
         }
 
-        li a:hover {
+        li:hover {
             color: $fontcolorhover;
         }
     }
@@ -157,6 +275,7 @@ $headfontcolor :  #6e6d6d;
         text-align: center;
         line-height: 1.5em;
         .banner-head{
+            // padding: 45px;
             color:$headfontcolor;
             h1{
                 color: $fontcolor;
@@ -167,13 +286,14 @@ $headfontcolor :  #6e6d6d;
         }
     }
     .no-subscribe{
+        margin: 40px 0 40px 0;
         .box {
             width:70%;
-            height:200px;
+            height:100%;
             background:#efeded;
-            margin:40px auto;
+            margin:0 auto;
             border-top: 2px solid #d2d6de;
-            border-radius: 20px;
+            // border-radius: 20px;
             box-shadow: 0 1px 1px rgba(12, 59, 117, 0.8);
             text-align: center;
         span{
@@ -182,41 +302,6 @@ $headfontcolor :  #6e6d6d;
             color: $headfontcolor;
         }
         }
-        .effect
-        {
-        position: relative;
-        }
-        .effect:before, .effect:after
-        {
-        z-index: -1;
-        position: absolute;
-        content: "";
-        bottom: 15px;
-        left: 10px;
-        width: 50%;
-        top: 80%;
-        max-width:300px;
-        background: #777;
-        -webkit-box-shadow: 0 15px 10px #777;
-        -moz-box-shadow: 0 15px 10px #777;
-        box-shadow: 0 15px 10px #777;
-        -webkit-transform: rotate(-3deg);
-        -moz-transform: rotate(-3deg);
-        -o-transform: rotate(-3deg);
-        -ms-transform: rotate(-3deg);
-        transform: rotate(-3deg);
-        }
-        .effect:after
-        {
-        -webkit-transform: rotate(3deg);
-        -moz-transform: rotate(3deg);
-        -o-transform: rotate(3deg);
-        -ms-transform: rotate(3deg);
-        transform: rotate(3deg);
-        right: 10px;
-        left: auto;
-        }
-
         input[type=text], select {
             padding: 10px;
             margin: 16px 0;
@@ -357,17 +442,13 @@ $headfontcolor :  #6e6d6d;
 
 /*ABout us*/
 .no-about{
-    padding-top: 5.5em;
-    padding-bottom: 5.5em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
     .about-text{
-        margin-top: 2em;
-        a{
-            color: white ;
-            font-size: 1.1em;
-        }
-        a:hover{
-            cursor: pointer;
-            color: white;
+        
+        button{
+            font-size: 1em;
+   
         }
     }
     h3{
@@ -375,9 +456,22 @@ $headfontcolor :  #6e6d6d;
         font-size: 1.2em;
         line-height: 1.5em;
      }
+     .modal-footer{
+         padding: unset;
+         border:unset;
+         button{
+            background-color: unset;
+            border: none;
+            padding: 10px 10px 0px 0px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+         }
+     }
     .modal-content{
-        width: 360px;
-        margin: 2em auto;
+        width: 76%;
+        margin: 0 auto;
         border-radius: 22px;
     }
     .no-login-body{
@@ -387,7 +481,7 @@ $headfontcolor :  #6e6d6d;
         width: unset;
         background:unset !important;
         .no-login-box{
-            width: unset;
+            max-width: unset;
             padding: unset;
             margin: unset;
             background: unset;

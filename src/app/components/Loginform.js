@@ -52,7 +52,7 @@ export class Loginform extends React.Component {
 
         return (
             <div className="no-login-body">
-                <div className="no-login-box clearfix">
+                <div className="no-login-box clearfix col-md-4 col-sm-8  col-xs-9  ">
                     <div className="col-xs-6 col-xs-offset-3" >
                     <a ><img src="img/logo.png"  alt="Subscribe icon" width="100%" /></a>
                     </div>

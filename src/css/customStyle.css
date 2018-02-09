@@ -1,3 +1,11 @@
+.dis-block {
+  display: block; }
+
+.collapsing {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none; }
+
 .cs1 {
   position: relative; }
 
@@ -17,20 +25,64 @@
 .mrg-0-auto {
   margin: 0 auto; }
 
+/*responsive screen*/
+@media screen and (max-width: 767px) {
+  .row {
+    width: 95% !important; }
+
+  .pg-head {
+    position: relative; }
+    .pg-head #myNavbar {
+      position: absolute;
+      background-color: #efededed;
+      z-index: 99;
+      top: 50px; }
+    .pg-head .no-nav li {
+      width: 100% !important;
+      border-bottom: 1px solid #ed823970;
+      float: left; }
+    .pg-head .no-head {
+      height: 50px; }
+      .pg-head .no-head button {
+        display: block !important;
+        outline: none; }
+        .pg-head .no-head button div {
+          width: 1em;
+          height: 1px;
+          background-color: #ed8239;
+          margin: 4px 0; }
+
+  .no-about {
+    padding-top: 1.5em !important; }
+    .no-about .about-text {
+      margin-top: unset !important; } }
+@media screen and (min-width: 767px) {
+  .pg-head .collapse {
+    display: block !important; } }
+@media screen and (max-width: 500px) {
+  .landing-page .no-banner .banner-head {
+    padding: 15px !important; }
+  .landing-page .no-banner a, .landing-page .no-banner div {
+    width: 100%; }
+    .landing-page .no-banner a img, .landing-page .no-banner div img {
+      width: 20% !important; } }
+/*responsive screen*/
 /*login*/
 .no-login-body {
   min-height: 100vh;
-  position: fixed;
+  position: absolute;
   width: 100%;
   background: lightblue url("../img/photo4.jpg") no-repeat fixed center !important; }
   .no-login-body a:hover {
     cursor: default; }
   .no-login-body .no-login-box {
-    width: 30%;
+    float: unset;
     padding: 35px;
     margin: 8em auto;
     background: white;
     border-radius: 22px; }
+    .no-login-body .no-login-box form div {
+      padding: unset; }
     .no-login-body .no-login-box div {
       margin-bottom: 15px;
       font-size: 1.2em; }
@@ -54,6 +106,21 @@
       top: 7px; }
 
 /**login*/
+/*header*/
+.pg-head button {
+  display: none;
+  position: absolute;
+  right: 1.2em;
+  background-color: unset;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: black;
+  padding: unset !important; }
+
+/*header*/
 /*landing page*/
 .lead {
   font-weight: 400;
@@ -79,6 +146,9 @@
 .p-10em {
   padding: 10em; }
 
+.p-t-10em {
+  padding-top: 10em; }
+
 .fr {
   float: right; }
 
@@ -98,6 +168,8 @@
     width: 100%; }
   .landing-page .no-head {
     border-bottom: 2px solid #ed8239; }
+    .landing-page .no-head a img {
+      min-width: 110px; }
     .landing-page .no-head h1 {
       font-size: 45px; }
   .landing-page .no-nav ul {
@@ -107,14 +179,14 @@
     overflow: hidden; }
   .landing-page .no-nav li {
     width: 20%;
-    float: left; }
-  .landing-page .no-nav li a {
+    float: left;
+    text-transform: uppercase;
     display: block;
     color: #ed8239;
     text-align: center;
     padding: 8px 16px;
     text-decoration: none; }
-  .landing-page .no-nav li a:hover {
+  .landing-page .no-nav li:hover {
     color: #6e6d6d; }
   .landing-page .no-banner {
     text-align: center;
@@ -125,71 +197,44 @@
         color: #ed8239;
         width: 100%;
         font-weight: bold; }
-  .landing-page .no-subscribe .box {
-    width: 70%;
-    height: 200px;
-    background: #efeded;
-    margin: 40px auto;
-    border-top: 2px solid #d2d6de;
-    border-radius: 20px;
-    box-shadow: 0 1px 1px rgba(12, 59, 117, 0.8);
-    text-align: center; }
-    .landing-page .no-subscribe .box span {
-      font-weight: bold;
-      font-size: 1.8em;
-      color: #6e6d6d; }
-  .landing-page .no-subscribe .effect {
-    position: relative; }
-  .landing-page .no-subscribe .effect:before, .landing-page .no-subscribe .effect:after {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 15px;
-    left: 10px;
-    width: 50%;
-    top: 80%;
-    max-width: 300px;
-    background: #777;
-    -webkit-box-shadow: 0 15px 10px #777;
-    -moz-box-shadow: 0 15px 10px #777;
-    box-shadow: 0 15px 10px #777;
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg); }
-  .landing-page .no-subscribe .effect:after {
-    -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    transform: rotate(3deg);
-    right: 10px;
-    left: auto; }
-  .landing-page .no-subscribe input[type=text], .landing-page .no-subscribe select {
-    padding: 10px;
-    margin: 16px 0;
-    display: inline-block;
-    border: 0;
-    box-shadow: 0px 0px 2px #00000094;
-    border-bottom-left-radius: 6px;
-    border-top-left-radius: 6px;
-    box-sizing: border-box;
-    width: 60%; }
-  .landing-page .no-subscribe input[type=submit] {
-    background-color: #ed8239;
-    color: white;
-    padding: 10px;
-    margin: 16px 0;
-    display: inline-block;
-    box-shadow: 0px 0px 2px #00000094;
-    border: 0;
-    border-bottom-right-radius: 6px;
-    border-top-right-radius: 6px;
-    box-sizing: border-box; }
-  .landing-page .no-subscribe input[type=submit]:hover {
-    background-color: #6e6d6d;
-    color: white; }
+  .landing-page .no-subscribe {
+    margin: 40px 0 40px 0; }
+    .landing-page .no-subscribe .box {
+      width: 70%;
+      height: 100%;
+      background: #efeded;
+      margin: 0 auto;
+      border-top: 2px solid #d2d6de;
+      box-shadow: 0 1px 1px rgba(12, 59, 117, 0.8);
+      text-align: center; }
+      .landing-page .no-subscribe .box span {
+        font-weight: bold;
+        font-size: 1.8em;
+        color: #6e6d6d; }
+    .landing-page .no-subscribe input[type=text], .landing-page .no-subscribe select {
+      padding: 10px;
+      margin: 16px 0;
+      display: inline-block;
+      border: 0;
+      box-shadow: 0px 0px 2px #00000094;
+      border-bottom-left-radius: 6px;
+      border-top-left-radius: 6px;
+      box-sizing: border-box;
+      width: 60%; }
+    .landing-page .no-subscribe input[type=submit] {
+      background-color: #ed8239;
+      color: white;
+      padding: 10px;
+      margin: 16px 0;
+      display: inline-block;
+      box-shadow: 0px 0px 2px #00000094;
+      border: 0;
+      border-bottom-right-radius: 6px;
+      border-top-right-radius: 6px;
+      box-sizing: border-box; }
+    .landing-page .no-subscribe input[type=submit]:hover {
+      background-color: #6e6d6d;
+      color: white; }
   .landing-page .no-body {
     text-align: center;
     margin-bottom: 35px; }
@@ -261,23 +306,28 @@
 /*landing page*/
 /*ABout us*/
 .no-about {
-  padding-top: 5.5em;
-  padding-bottom: 5.5em; }
-  .no-about .about-text {
-    margin-top: 2em; }
-    .no-about .about-text a {
-      color: white;
-      font-size: 1.1em; }
-    .no-about .about-text a:hover {
-      cursor: pointer;
-      color: white; }
+  padding-top: 2.5em;
+  padding-bottom: 2.5em; }
+  .no-about .about-text button {
+    font-size: 1em; }
   .no-about h3 {
     margin-bottom: 1.04em;
     font-size: 1.2em;
     line-height: 1.5em; }
+  .no-about .modal-footer {
+    padding: unset;
+    border: unset; }
+    .no-about .modal-footer button {
+      background-color: unset;
+      border: none;
+      padding: 10px 10px 0px 0px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer; }
   .no-about .modal-content {
-    width: 360px;
-    margin: 2em auto;
+    width: 76%;
+    margin: 0 auto;
     border-radius: 22px; }
   .no-about .no-login-body {
     font-size: 0.8em !important;
@@ -286,7 +336,7 @@
     width: unset;
     background: unset !important; }
     .no-about .no-login-body .no-login-box {
-      width: unset;
+      max-width: unset;
       padding: unset;
       margin: unset;
       background: unset;

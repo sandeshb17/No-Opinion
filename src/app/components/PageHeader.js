@@ -1,11 +1,5 @@
 import React, { Component } from "react";
-
-import {
-    BrowserRouter as Router,
-    Route,
-    Link
-  } from 'react-router-dom';
-
+import {Link} from "react-router-dom";
 
 export class PageHeader extends Component {
     render(){
@@ -13,20 +7,29 @@ export class PageHeader extends Component {
         return(
             
            
-            <div className="row">
-               <div className="col-md-12 no-head  center-content pd-10">
-                        <Link to="/"><img src="img/logo.png"  alt="Subscribe icon" width="25%" /></Link>
+            <div className="row pg-head">
+                    <div className="col-md-12 no-head  center-content pd-10">
+                        <Link className="col-xs-9 fl" to="/"><img src="img/logo.png"  alt="Subscribe icon" width="25%" /></Link>
+                      <button className="fr" type="button" data-toggle="collapse" data-target="#myNavbar">
+                        <div></div>
+                        <div></div>
+                        <div></div>                       
+                        </button>
                     </div>
-                
-                    <div className="no-nav col-md-12 center-content">
-                            <ul>
-                                <li ><a className="active" href="#">Daily news</a></li>
-                                <li ><a href="#">The App</a></li>
-                                <li ><a href="#">Fact Guides</a></li>
-                                <li ><a href="#">Fact Leaders</a></li>
-                                <li ><Link to="/aboutus">About us</Link></li>
-                            </ul>
+                    <div id="myNavbar" className="collapse">
+                    <div className="no-nav col-md-12 center-content ">
+                    <ul>
+                        <Link to="#"><li  className="col-xs-12">Daily news</li></Link>
+                        <Link to="#"><li  className="col-xs-12">The App</li></Link>
+                        <Link to="#"><li  className="col-xs-12">Fact Guides</li></Link>
+                        <Link to="#"><li  className="col-xs-12">Fact Leaders</li></Link>
+                        <Link to="/aboutus"><li  className="col-xs-12">About us</li></Link>
+                    </ul>
+                    </div>  
                     </div>
+                    
+
+                    
             </div>
 
         );
