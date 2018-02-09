@@ -67,15 +67,24 @@ export class RssFeedManagement extends Component {
             )*!/
         }*/
         return (
-            <div>
+            <div className="container">
                 <div className="row">
-                    {/*<div style={{"display": (this.state.errorMessages)!==""?"":"none","position":"absolute","zIndex":"99999"}}>
+                    <div style={{"display": (this.state.errorMessages)!==""?"":"none","position":"absolute","zIndex":"99999"}}>
                         <Notifications/>
-                    </div>*/}
+                    </div>
                 </div>
-              <AddRssFeed rssFeed={this.state.rssFeed} rssKey = {this.state.rssFeedKey} />
-              <ListRssFeed rssFeedList={this.state.rssFeedList} onHandleEdit={this.onHandleEdit} onHandleDeleteProps={this.onHandleDeleteProps}/>
+                <div className="row">
+                    <div className="col-sm-5">
+                        <AddRssFeed rssFeed={this.state.rssFeed} rssKey = {this.state.rssFeedKey} />
+                    </div>
+                    <div className="col-sm-7">
+                        <ListRssFeed rssFeedList={this.state.rssFeedList} onHandleEdit={this.onHandleEdit} onHandleDeleteProps={this.onHandleDeleteProps}/>
+                    </div>
+                </div>
+
+
             </div>
+
         )
     }
 }

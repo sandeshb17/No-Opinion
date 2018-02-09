@@ -16,14 +16,18 @@ export class ListUser extends React.Component {
     renderUser(){
         var userList = this.props.userList;
         var roleList = this.props.role_coll;
+
+        //console.log(role_coll);
         //console.log(userList);
         return _.map(userList, (user,key)=>{
             const roleId = user.role;
-            const roleTitle = roleList[roleId].title;
+            //console.log(typeof (roleList[roleId]))
+            const roleTitle = (typeof (roleList[roleId]) === 'undefined')?'noRole':roleList[roleId].title;
             return(
                 <tr key={key}>
                     <td>{user.firstName+' '+ user.lastName}</td>
                     <td>{roleTitle}</td>
+                    <td>{user.email}</td>
                 </tr>
             )
 
@@ -32,22 +36,22 @@ export class ListUser extends React.Component {
     }
     render(){
         return (
-            <div className="col col-md-7">
-                <h1>List User</h1>
-                <table className="table">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Role</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    {this.renderUser()}
-
-                    </tbody>
-                </table>
-
-
+            <div className="row">
+                <div className="col-sm-12">
+                    <h1>List of User Details</h1>
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <th>User Name</th>
+                                <th>User Role</th>
+                                <th>User Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {this.renderUser()}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         )
     }

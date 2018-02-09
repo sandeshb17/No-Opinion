@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 export class Content extends React.Component {
     render(){
         return (
-            <div className="content-wrapper minHeight990">
+            <div className="content-wrapper">
                 <section className="content-header">
                     <h1>
                         Dashboard

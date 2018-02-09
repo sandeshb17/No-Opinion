@@ -92,6 +92,7 @@ export class AddUser extends React.Component {
                     lastName: userData.lastName,
                     phoneNumber: userData.phoneNumber,
                     role: userData.role,
+                    email: userData.email
                 }
                 appUser.push(userDetail, function (error) {
                 if (error) {
@@ -155,31 +156,29 @@ export class AddUser extends React.Component {
         return (
             <div>
                 <div className="row">
-                    {/*<div style={{"display": (this.state.errorMessages)!==""?"":"none","position":"absolute","zIndex":"99999"}}>
+                    <div style={{"display": (this.state.errorMessages)!==""?"":"none","position":"absolute","zIndex":"99999"}}>
                         <Notifications/>
-                    </div>*/}
+                    </div>
                 </div>
-                <div className="col col-md-5">
+                <div className="row">
+                <div className="col-sm-12">
                     <form onSubmit={this.onHandleSubmit}>
-                        <div className="form-group row">
-                            <div className="col col-md-6">
+                        <h1>Add New User</h1>
+                        <div className="form-group">
                                 <label htmlFor="FirstName">First Name</label>
                                 <input type="text"
-                                       className="form-control col col-md-6"
+                                       className="form-control"
                                        id="FirstName"
-                                       placeholder="Last Name"
+                                       placeholder="First Name"
                                         name="FirstName"
                                         ref="FirstName"
                                        onChange={this.onHandleChange}
                                        value={this.state.FirstName}
-                                        required/>
-                                </div>
-                            <div className="col col-md-6">
-                                <span className="danger">
+                                        required
+                                       maxLength="50"/>
 
-                                </span>
-                            </div>
                         </div>
+
                         <div className="form-group">
                             <label htmlFor="LastName">Last Name</label>
                             <input type="text"
@@ -190,7 +189,8 @@ export class AddUser extends React.Component {
                                    ref="LastName"
                                    onChange={this.onHandleChange}
                                    value={this.state.LastName}
-                                   required/>
+                                   required
+                                   maxLength="50"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="PhoneNumber">Phone Number</label>
@@ -202,7 +202,8 @@ export class AddUser extends React.Component {
                                    ref="PhoneNumber"
                                    onChange={this.onHandleChange}
                                    value={this.state.PhoneNumber}
-                                   required/>
+                                   required
+                                   maxLength="13"/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="inputState">Role</label>
@@ -222,32 +223,36 @@ export class AddUser extends React.Component {
                                    ref="Email"
                                    onChange={this.onHandleChange}
                                    value={this.state.email}
-                                   required/>
+                                   required
+                                   maxLength="64"/>
                         </div>
                         <div className="form-group">
                         <label htmlFor="Password">Password</label>
                         <input type="text"
                                className="form-control"
                                id="Password"
-                               placeholder="Password"
+                               placeholder="New Password"
                                value={this.state.Password}
                                name="Password"
                                onChange={this.onHandleChange}
-                               required/>
+                               required
+                               minLength="8"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="ConfirmPassword">Confirm Password</label>
                         <input type="text"
                                className="form-control"
                                id="ConfirmPassword"
-                               placeholder="ConfirmPassword"
+                               placeholder="Confirm Password"
                                value={this.state.ConfirmPassword}
                                name="ConfirmPassword"
                                onChange={this.onHandleChange}
+                               minLength="8"
                                required/>
                     </div>
                         <button type="submit" className="btn btn-primary">{this.state.ActionType}</button>
                     </form>
+                </div>
                 </div>
             </div>
         );

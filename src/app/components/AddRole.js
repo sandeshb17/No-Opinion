@@ -127,33 +127,38 @@ export class AddRole extends React.Component {
                         <Notifications/>
                     </div>
                 </div>
-                <div className="col col-md-7">
-                    <form onSubmit={this.onHandleSubmit}>
-                        <div className="form-group">
-                            <input type="hidden" value={this.state.role_id}/>
-                            <label htmlFor="exampleInputEmail1">Role Title</label>
-                            <input type="text"
-                                   className="form-control"
-                                   id="exampleInputEmail1"
-                                   placeholder="Title"
-                                    name="title"
-                                    ref="title"
-                                   onChange={this.onHandleChange}
-                                   value={this.state.title}
-                                    required/>
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="exampleInputPassword1">Role Description</label>
-                            <input type="text"
-                                   className="form-control"
-                                   id="roleDesc"
-                                   placeholder="Description"
-                                   value={this.state.description}
-                                    name="description"
-                                    onChange={this.onHandleChange}/>
-                        </div>
-                        <button type="submit" className="btn btn-primary">{this.state.actionType}</button>
-                    </form>
+                <div className="row">
+                    <div className="col-sm-12">
+                        <form onSubmit={this.onHandleSubmit}>
+                            <h1>Add New Role</h1>
+                            <div className="form-group">
+                                <input type="hidden" value={this.state.role_id}/>
+                                <label htmlFor="exampleInputEmail1">Role Title</label>
+                                <input type="text"
+                                       className="form-control"
+                                       id="exampleInputEmail1"
+                                       placeholder="Title"
+                                       name="title"
+                                       ref="title"
+                                       onChange={this.onHandleChange}
+                                       value={this.state.title}
+                                       required
+                                       maxLength="25"/>
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="exampleInputPassword1">Role Description</label>
+                                <input type="text"
+                                       className="form-control"
+                                       id="roleDesc"
+                                       placeholder="Description"
+                                       value={this.state.description}
+                                       name="description"
+                                       onChange={this.onHandleChange}
+                                maxLength="100"/>
+                            </div>
+                            <button type="submit" className="btn btn-primary">{this.state.actionType}</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         );

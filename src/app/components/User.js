@@ -4,7 +4,9 @@ import React, { Component } from 'react';
 import {role_coll} from "../firebase";
 import {AddUser} from "./AddUser";
 import {ListUser} from "./ListUser";
-import {appUser} from "../firebase"
+import {appUser} from "../firebase";
+
+import Notifications, {notify} from 'react-notify-toast';
 
 
 export class User extends Component {
@@ -30,13 +32,20 @@ export class User extends Component {
     }
     render(){
         return (
-            <div>
-                <div className="row">
+            <div className="container">
 
+                <div className="row">
+                    <div className="col-sm-5">
+                        <AddUser roleList={this.state.roleList}/>
+                    </div>
+                    <div className="col-sm-5">
+                        <ListUser userList={this.state.userList} role_coll = {this.state.roleList}/>
+                    </div>
                 </div>
-                <AddUser roleList={this.state.roleList}/>
-                <ListUser userList={this.state.userList} role_coll = {this.state.roleList}/>
+
+
             </div>
+
         )
     }
 }
