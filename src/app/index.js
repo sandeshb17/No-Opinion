@@ -35,6 +35,7 @@ export class App extends React.Component {
                     <Route exact path='/RssFeedCron' component={RssFeedCron}/>
 
                     <Dash>
+                        
                         <Route component={AddRole} path="/Add-Role" pattern="/Add-Role"  />
                         <Route component={AddUser} path="/Add-User" pattern="/Add-User"  />
                         <Route exact path='/Rss' component={RssFeedManagement}/>

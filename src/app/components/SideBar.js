@@ -37,8 +37,8 @@ export class SideBar extends Component {
                                         <span>User Management</span>
                                     </a>
                                     <ul className="treeview-menu">
-                                        <li><Link to="/Role"><i className="fa fa-circle-o"></i>Role</Link></li>
-                                        <li><Link to="/User"><i className="fa fa-circle-o"></i>User</Link></li>
+                                        <li><Link to="/Role" activeclassname="active"><i className="fa fa-circle-o"></i>Role</Link></li>
+                                        <li><Link to="/User" activeclassname="active"><i className="fa fa-circle-o"></i>User</Link></li>
                                     </ul>
                                 </li>
                                 <li className="header">RSS Feed Management</li>
