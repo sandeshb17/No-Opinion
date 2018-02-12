@@ -19,14 +19,24 @@
   },
   "homepage": "https://github.com/sandeshb17/No-Opinion#readme",
   "dependencies": {
-    "history": "^1.17.0",
+    "firebase": "^4.9.0",
+    "firebase-admin": "^5.8.2",
+    "firebase-functions": "^0.8.1",
+    "lodash": "^4.17.5",
+    "moment": "^2.20.1",
+    "node-uuid": "^1.4.8",
     "react": "^16.2.0",
-    "react-bootstrap": "^0.32.0",
+    "react-bootstrap": "^0.32.1",
+    "react-confirm-bootstrap": "^5.1.1",
     "react-dom": "^16.2.0",
     "react-fontawesome": "^1.6.1",
+    "react-moment": "^0.7.0",
+    "react-notify-toast": "^0.4.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "reactjs-admin-lte": "^0.5.1"
+    "react-validation": "^3.0.7",
+    "reactjs-admin-lte": "^0.5.1",
+    "universal-cookie": "^2.1.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -35,6 +45,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.10.1"
+    "webpack-dev-server": "^2.11.1"
   }
 }

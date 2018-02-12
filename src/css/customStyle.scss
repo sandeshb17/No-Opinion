@@ -112,7 +112,7 @@ $headfontcolor :  #6e6d6d;
         cursor: default;
     }
     min-height: 100vh;
-    position: fixed;
+    position: absolute;
     width: 100%;
     
     background: lightblue url("../img/photo4.jpg") no-repeat fixed center !important;
@@ -122,20 +122,11 @@ $headfontcolor :  #6e6d6d;
         margin: 8em auto;
         background: white;
         border-radius: 22px;
-        form{
-                div{
-                    padding:unset;
-                }
-        
-        }
-
+     
 
         div{
             margin-bottom: 15px;
             font-size: 1.2em;
-        }
-        input,button{
-            font-size:1em;
         }
                 
         input.form-control{
@@ -223,7 +214,7 @@ padding-top:10em;
 }
 
 .landing-page{
-        font-size:1.3em;
+        // font-size:1.3em;
         width: 100%;
         
         .row{
@@ -442,8 +433,8 @@ padding-top:10em;
 
 /*ABout us*/
 .no-about{
-    padding-top: 5.5em;
-    padding-bottom: 5.5em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
     .about-text{
         
         button{
@@ -481,7 +472,7 @@ padding-top:10em;
         width: unset;
         background:unset !important;
         .no-login-box{
-            max-width: unset;
+            width: 100%;
             padding: unset;
             margin: unset;
             background: unset;

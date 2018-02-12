@@ -8,7 +8,7 @@ export class PageHeader extends Component {
             
            
             <div className="row pg-head">
-                    <div className="col-md-12 no-head  center-content pd-10">
+                    <div className="col-md-12 no-head  center-content pd-10 clearfix">
                         <Link className="col-xs-9 fl" to="/"><img src="img/logo.png"  alt="Subscribe icon" width="25%" /></Link>
                       <button className="fr" type="button" data-toggle="collapse" data-target="#myNavbar">
                         <div></div>

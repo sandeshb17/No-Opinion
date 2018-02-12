@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import {Link} from "react-router-dom";
+
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+  } from 'react-router-dom';
 
 export class PageFooter extends Component {
     render(){
@@ -7,7 +12,7 @@ export class PageFooter extends Component {
                 <div className="no-footer">
                     <footer id="myFooter">
                         <div className="container">
-                            <div className="row">
+                            <div className="">
                                 <div className="col-sm-3 myCols">
                                     <h5>Get started</h5>
                                     <ul>

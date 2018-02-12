@@ -10,8 +10,7 @@ export class Dash extends React.Component {
         return(
         <div>
             <Header />    
-            <SideBar/>        
-            <Content />        
+            <SideBar/>
          </div>
         );
     }

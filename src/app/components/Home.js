@@ -28,8 +28,8 @@ export class Home extends React.Component{
                         <strong>No Opinion</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown print   
                         </div>
                     </div>
-                    <div className="no-subscribe">
-                        <div className="box effect pd-10">
+                    <div className="no-subscribe col-xs-12">
+                        <div className="box effect pd-10 clearfix">
                             <span><img src="img/subs.png"  alt="Subscribe icon" height="45px" /></span>
                             <br/>
                             <span>Subscribe</span>
@@ -40,12 +40,12 @@ export class Home extends React.Component{
                             </div>
                         </div>
                     </div>
-                    <div className="no-body">
+                    <div className="no-body clearfix">
                     <div className="col-sm-6 col-xs-12 m-t-25 pd-25"><h1>No Opinion?</h1>
                         <strong>No Opinion</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown print   
                     </div>
                     <div className="col-sm-6 col-xs-12 ">
-                    <img src="img/bossimg.png"  alt="body Image" height="300px" />
+                    <img src="img/bossimg.png"  alt="body Image" width="100%" />
                     </div>
                     </div>
                 </div>                      

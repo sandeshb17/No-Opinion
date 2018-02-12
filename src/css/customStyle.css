@@ -70,7 +70,7 @@
 /*login*/
 .no-login-body {
   min-height: 100vh;
-  position: fixed;
+  position: absolute;
   width: 100%;
   background: lightblue url("../img/photo4.jpg") no-repeat fixed center !important; }
   .no-login-body a:hover {
@@ -81,13 +81,9 @@
     margin: 8em auto;
     background: white;
     border-radius: 22px; }
-    .no-login-body .no-login-box form div {
-      padding: unset; }
     .no-login-body .no-login-box div {
       margin-bottom: 15px;
       font-size: 1.2em; }
-    .no-login-body .no-login-box input, .no-login-body .no-login-box button {
-      font-size: 1em; }
     .no-login-body .no-login-box input.form-control {
       width: 100%;
       margin: 8px 0;
@@ -159,7 +155,6 @@
   margin: 0 auto; }
 
 .landing-page {
-  font-size: 1.3em;
   width: 100%; }
   .landing-page .row {
     width: 65%;
@@ -306,8 +301,8 @@
 /*landing page*/
 /*ABout us*/
 .no-about {
-  padding-top: 5.5em;
-  padding-bottom: 5.5em; }
+  padding-top: 2.5em;
+  padding-bottom: 2.5em; }
   .no-about .about-text button {
     font-size: 1em; }
   .no-about h3 {
@@ -336,7 +331,7 @@
     width: unset;
     background: unset !important; }
     .no-about .no-login-body .no-login-box {
-      max-width: unset;
+      width: 100%;
       padding: unset;
       margin: unset;
       background: unset;
